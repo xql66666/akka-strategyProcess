@@ -70,13 +70,7 @@ B.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml,e/e/ee4f73f
 j
 :.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml,8/5/858474d8d215ec25f84b3be6f80418553ae8d1df
 u
-Esrc/main/java/com/xuqianlei/boot/akka/actor/node/SwitchNodeActor.java,5/e/5ea262febbfe0ba6dc5e22dbb7eeaae1bcc94f5b
-u
 Esrc/main/java/com/xuqianlei/boot/akka/actor/node/ActionNodeActor.java,f/8/f8e602975eaeddc47eb1bb43f1fc6c12dd107903
-w
-Gsrc/main/java/com/xuqianlei/boot/akka/actor/root/RootBehaviorActor.java,e/2/e2d11c5dd07e4a5fdc649c9402ca5cccce2c59ad
-~
-Nsrc/main/java/com/xuqianlei/boot/akka/actor/classic/ClassicStartNodeActor.java,8/6/8615d7d8d55ff01d1d19fe6c02b74024c8233983
 l
 <src/main/java/com/xuqianlei/boot/akka/actor/FsmBehavior.java,e/4/e44d01cbe042bfdfe0033b0815b36fddf9f1328b
 s
@@ -155,8 +149,6 @@ r
 B.idea/libraries/Maven__com_typesafe_akka_akka_slf4j_2_13_2_8_5.xml,3/5/35f2537885dfc3a557b76645fc84c226b55a7afb
 x
 H.idea/libraries/Maven__com_typesafe_akka_akka_actor_typed_2_13_2_8_5.xml,d/3/d3abe781783d0385b6740e3abc9f54e367fced8e
-p
-@src/main/java/com/xuqianlei/boot/akka/entity/CommandContext.java,9/4/9464783eff81fb4a1169b6f3a5874b2b3e7c8b76
 t
 Dsrc/main/java/com/xuqianlei/boot/akka/entity/process/SwitchNode.java,8/a/8af62bf60f1b5f462c93af7d6be4114f42994afd
 p
@@ -199,8 +191,6 @@ s
 Csrc/main/java/com/xuqianlei/boot/akka/config/AkkaConfiguration.java,c/1/c102085316799a0198f6b87b5abb5534c154c462
 u
 Esrc/main/java/com/xuqianlei/boot/akka/config/SpringActorProducer.java,1/0/1081f36f4ac784e775ae79fe79899e96b5081bd1
-|
-Lsrc/main/java/com/xuqianlei/boot/akka/entity/command/NodeCommandContext.java,0/f/0f3fc4fd46878edbc21673fa843548f5592ee597
 j
 :src/main/java/com/xuqianlei/boot/akka/enums/EventEnum.java,9/a/9ab6023bcb7af5bf0b970c2a11fb75e4acc8b3ef
 i
@@ -209,7 +199,3 @@ j
 :src/main/java/com/xuqianlei/boot/akka/enums/NodeState.java,8/d/8d315b16cc0601adec14d14471d9759b75e8822e
 l
 <src/main/java/com/xuqianlei/boot/akka/event/EventCenter.java,4/b/4b67f3081332dac64611fe1c551da63e6c8d4662
-f
-6src/main/java/com/xuqianlei/boot/akka/event/Event.java,a/3/a30e471dc33e8a026a33fdf45e2d97f31a87ef5d
-m
-=src/main/java/com/xuqianlei/boot/akka/event/EventMonitor.java,b/0/b0130643c0bf5677c6a8740cb188b88fbaef1e9e

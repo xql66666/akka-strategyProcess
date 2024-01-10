@@ -44,9 +44,11 @@ public class EventMonitor {
         monitorActorMap.get(type).computeIfAbsent(customerId, k -> new ArrayList<>());
         monitorActorMap.get(type).get(customerId).add(Pair.of(ref, commandContext));
 
+        //查询历史事件
         Event startEvent = commandContext.getEvent();
         Event event = eventCenter.lookupEvent(Math.toIntExact(startEvent.getSeq()), type.getType(), startEvent.getCustomerId());
         if (event != null) {
+            commandContext.getExtraEvent().add(event);
             ref.tell(commandContext);
         }
     }
@@ -62,6 +64,7 @@ public class EventMonitor {
             if (!CollectionUtils.isEmpty(refs)) {
                 for (int i = refs.size() - 1; i >= 0; i--) {
                     Pair<ActorRef, NodeCommandContext> pair = refs.get(i);
+                    pair.getRight().getExtraEvent().add(event);
                     pair.getLeft().tell(pair.getRight());
                     refs.remove(i);
                 }

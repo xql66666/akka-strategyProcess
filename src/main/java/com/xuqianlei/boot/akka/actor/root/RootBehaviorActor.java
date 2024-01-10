@@ -13,6 +13,7 @@ import com.xuqianlei.boot.akka.entity.command.RootCommandContext;
 import com.xuqianlei.boot.akka.enums.NodeEnum;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.UUID;
 
@@ -35,6 +36,7 @@ public class RootBehaviorActor {
                                             .event(n.getEvent())
                                             .processId(n.getProcessId())
                                             .processInfo(processInfo)
+                                            .extraEvent(new ArrayList<>(4))
                                             .currNode(JSON.parseObject(nodeJson.toJSONString(), (Type) NodeEnum.getClass(nodeJson.getString("type"))))
                                     .build());
                             return Behaviors.same();

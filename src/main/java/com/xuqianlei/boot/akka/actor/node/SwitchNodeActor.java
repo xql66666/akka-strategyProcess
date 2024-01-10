@@ -21,10 +21,12 @@ import com.xuqianlei.boot.akka.entity.process.StartNode;
 import com.xuqianlei.boot.akka.entity.process.SwitchNode;
 import com.xuqianlei.boot.akka.enums.EventEnum;
 import com.xuqianlei.boot.akka.enums.NodeState;
+import com.xuqianlei.boot.akka.event.Event;
 import com.xuqianlei.boot.akka.util.BehaviorCreator;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.Duration;
+import java.util.List;
 
 
 /**
@@ -119,7 +121,9 @@ public class SwitchNodeActor extends AbstractBehavior<CommandContext> implements
             timerScheduler.cancel(currNode.getKey());
             //响应
             nextKey = currNode.getRuleNext().getKey();
-            log.info(currNode.getKey() + "节点收到事件");
+            List<Event> extraEvents = command.getExtraEvent();
+            Event event = extraEvents.get(extraEvents.size() - 1);
+            log.info(currNode.getKey() + "节点收到事件, msg: " + event.getMsg());
         } else {
             //未响应
             nextKey = currNode.getNext().getKey();

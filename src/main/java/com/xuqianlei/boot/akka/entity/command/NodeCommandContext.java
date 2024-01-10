@@ -10,6 +10,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -42,5 +43,10 @@ public class NodeCommandContext<T extends Node> implements CommandContext {
      * 当前节点
      */
     private T currNode;
+
+    /**
+     * 额外事件
+     */
+    private List<Event> extraEvent;
 
 }
