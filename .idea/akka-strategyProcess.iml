@@ -93,6 +93,10 @@
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-java8-compat_2.13:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor-typed_2.13:2.8.5" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-slf4j_2.13:2.8.5" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-stream_2.13:2.8.5" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-protobuf-v3_2.13:2.8.5" level="project" />
+    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe:ssl-config-core_2.13:0.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.11" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.11" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.11" level="project" />
